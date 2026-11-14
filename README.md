@@ -3,6 +3,8 @@
 Statistikani oddiy tilda oʻrgatadigan onlayn oʻquv platformasining namunasi (prototip).
 Bitta dars tayyor: **«Statistika nima?»**, 5 daqiqa, ikki xil variantdagi video bilan.
 
+**Jonli sahifa:** https://abdulaziz-itc.github.io/onlayn-statistika-instituti/ (brauzerda ochiladi, video oʻsha yerda oʻynaydi)
+
 > **DEMO · Prototip.** Dars matni va test savollari namuna, mutaxassis tekshirmagan. Rasmiy mahsulot emas.
 
 ![Dars sahifasi, kompyuter ekrani](docs/screenshots/kompyuter.png)
@@ -11,7 +13,7 @@ Bitta dars tayyor: **«Statistika nima?»**, 5 daqiqa, ikki xil variantdagi vide
 
 Dars bitta, video ikki xil usulda va ikki xil ovozda. Mazmuni bir xil.
 
-GitHub bunday katta videoni oʻz sahifasida koʻrsatmaydi: rasm yoki havolani bossangiz, video fayli yuklab olinadi. Videoni platformaning oʻzida koʻrish uchun pastdagi «Ishga tushirish» boʻlimiga qarang.
+GitHub bunday katta videoni oʻz sahifasida koʻrsatmaydi: rasm yoki havolani bossangiz, video fayli yuklab olinadi. Videoni koʻrish uchun [jonli sahifani](https://abdulaziz-itc.github.io/onlayn-statistika-instituti/) oching.
 
 | 1-variant: yorugʻ uslub, 1-ovoz | 2-variant: qorongʻi uslub, 2-ovoz |
 |---|---|

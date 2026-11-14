@@ -1,0 +1,60 @@
+/* «Onlayn statistika instituti» — learning platform shell (v0.4).
+ * Scope: .ms-root.v-edu · prefix e- · colours only through --ms-* tokens (base.css themes: light / dark / hc).
+ * Layout is switched by data-layout (set in JS), so enlarged text can use the compact layout on wide screens too.
+ */
+.ms-root.v-edu { --ms-radius: 14px; --ms-radius-sm: 10px; }
+
+.ms-root .e-shell { display: grid; grid-template-columns: minmax(0, 1fr); min-height: 100vh; }
+.ms-root .e-shell[data-layout="wide"] { grid-template-columns: 16rem minmax(0, 1fr); }
+
+/* ---------- sidebar ---------- */
+.ms-root .e-side { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; gap: 1rem; padding: 1rem 0.75rem; background: var(--ms-surface); border-right: 1px solid var(--ms-border); overflow-y: auto; }
+.ms-root .e-brand { display: flex; align-items: center; gap: 0.7rem; min-width: 0; padding: 0.25rem 0.5rem; }
+.ms-root .e-mark { flex: none; }
+.ms-root .e-brand__txt { display: grid; min-width: 0; line-height: 1.25; }
+.ms-root .e-brand__txt strong { font-size: 0.9375rem; overflow-wrap: anywhere; }
+.ms-root .e-brand__txt small { font-size: 0.8125rem; color: var(--ms-muted); }
+.ms-root .e-nav { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+.ms-root .e-nav ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.ms-root .e-nav__foot { margin-top: auto !important; padding-top: 0.75rem !important; border-top: 1px solid var(--ms-border); }
+.ms-root .e-nav__item { display: flex; align-items: center; gap: 0.7rem; width: 100%; min-height: 48px; padding: 0.5rem 0.75rem; border: 1px solid transparent; border-radius: var(--ms-radius-sm); background: none; color: var(--ms-text); font: inherit; font-weight: 600; text-align: start; cursor: pointer; }
+.ms-root .e-nav__item:hover { background: var(--ms-surface-2); }
+.ms-root .e-nav__item[aria-current="page"] { background: var(--ms-accent-soft); border-color: var(--ms-accent); font-weight: 700; }
+.ms-root .e-nav__item[aria-current="page"] .ms-icon { color: var(--ms-link); }
+
+/* ---------- work area ---------- */
+.ms-root .e-work { display: flex; flex-direction: column; min-width: 0; min-height: 100vh; }
+.ms-root .e-demo { padding-inline: clamp(1rem, 0.5rem + 2vw, 2rem); }
+.ms-root .e-top { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 0.75rem; padding: 0.5rem clamp(1rem, 0.5rem + 2vw, 2rem); background: var(--ms-surface); border-bottom: 1px solid var(--ms-border); }
+.ms-root .e-top__brand { flex: 1 1 12rem; padding: 0; }
+.ms-root .e-top__tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 0.4rem; margin-left: auto; }
+.ms-root .e-tbtn { border-color: var(--ms-control-border); background: var(--ms-surface); padding-inline: 0.75em; }
+.ms-root .e-main { flex: 1; width: 100%; max-width: 82rem; margin: 0 auto; padding: clamp(1rem, 0.5rem + 2vw, 2rem); }
+.ms-root .e-main:focus { outline: none; }
+.ms-root .e-foot { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; padding: 1rem clamp(1rem, 0.5rem + 2vw, 2rem); border-top: 1px solid var(--ms-border); font-size: 0.875rem; color: var(--ms-muted); }
+
+/* ---------- compact layout: bottom bar ---------- */
+.ms-root .e-shell[data-layout="compact"] .e-top { position: static; }
+.ms-root .e-shell[data-layout="compact"] .e-work { padding-bottom: calc(4.25rem + env(safe-area-inset-bottom, 0px)); }
+.ms-root .e-bbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; background: var(--ms-surface); border-top: 1px solid var(--ms-border); padding-bottom: env(safe-area-inset-bottom, 0px); }
+.ms-root .e-bbar ul { list-style: none; margin: 0; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; }
+.ms-root .e-bbar__btn { display: grid; justify-items: center; gap: 2px; width: 100%; min-height: 60px; padding: 0.4rem 0.5rem; border: 0; border-top: 3px solid transparent; background: none; color: var(--ms-muted); font: inherit; font-size: 0.8125rem; font-weight: 600; cursor: pointer; }
+.ms-root .e-bbar__btn[aria-current="page"] { color: var(--ms-text); border-top-color: var(--ms-accent); font-weight: 700; }
+.ms-root .e-bbar__btn[aria-current="page"] .ms-icon { color: var(--ms-link); }
+
+/* ---------- settings page ---------- */
+.ms-root .e-page { display: grid; gap: 1.25rem; max-width: 52rem; }
+.ms-root .e-head { display: grid; gap: 0.35rem; }
+.ms-root .e-title { margin: 0; font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.25rem); line-height: 1.15; }
+.ms-root .e-sub { margin: 0; color: var(--ms-muted); font-size: 1.0625rem; }
+.ms-root .e-card { display: grid; gap: 1.1rem; padding: 1.25rem; background: var(--ms-surface); border: 1px solid var(--ms-border); border-radius: var(--ms-radius); }
+.ms-root .e-h2 { display: flex; align-items: center; gap: 0.5rem; margin: 0; font-size: 1.25rem; line-height: 1.25; }
+.ms-root .e-h2 .ms-icon { color: var(--ms-accent); }
+
+/* ---------- modes ---------- */
+.ms-root[data-theme="hc"] .e-nav__item[aria-current="page"], .ms-root[data-theme="hc"] .e-bbar__btn[aria-current="page"] { outline: 2px solid var(--ms-text); outline-offset: -2px; }
+@media print { .ms-root .e-side, .ms-root .e-top, .ms-root .e-bbar, .ms-root .e-demo { display: none; } }
+/* icons follow the text size (low-vision font scale) */
+.ms-root .e-nav__item .ms-icon { width: 1.25rem; height: 1.25rem; }
+.ms-root .e-bbar__btn .ms-icon { width: 1.375rem; height: 1.375rem; }
+.ms-root .e-lite { min-height: 1.75rem; }

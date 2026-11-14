@@ -9,12 +9,14 @@ Bitta dars tayyor: **«Statistika nima?»**, 5 daqiqa, ikki xil variantdagi vide
 
 ## Videolar
 
-Dars bitta, video ikki xil usulda va ikki xil ovozda. Mazmuni bir xil. Rasmni bossangiz, video GitHub'ning oʻzida ochiladi.
+Dars bitta, video ikki xil usulda va ikki xil ovozda. Mazmuni bir xil.
+
+GitHub bunday katta videoni oʻz sahifasida koʻrsatmaydi: rasm yoki havolani bossangiz, video fayli yuklab olinadi. Videoni platformaning oʻzida koʻrish uchun pastdagi «Ishga tushirish» boʻlimiga qarang.
 
 | 1-variant: yorugʻ uslub, 1-ovoz | 2-variant: qorongʻi uslub, 2-ovoz |
 |---|---|
-| [![1-variant videosi](media/statistika-nima-yorugh.jpg)](media/statistika-nima-yorugh.mp4) | [![2-variant videosi](media/statistika-nima-qorongi.jpg)](media/statistika-nima-qorongi.mp4) |
-| [statistika-nima-yorugh.mp4](media/statistika-nima-yorugh.mp4) · 5:11 · 7,5 MB | [statistika-nima-qorongi.mp4](media/statistika-nima-qorongi.mp4) · 5:11 · 9,3 MB |
+| [![1-variant videosi](media/statistika-nima-yorugh.jpg)](media/statistika-nima-yorugh.mp4?raw=true) | [![2-variant videosi](media/statistika-nima-qorongi.jpg)](media/statistika-nima-qorongi.mp4?raw=true) |
+| [statistika-nima-yorugh.mp4](media/statistika-nima-yorugh.mp4?raw=true) · 5:11 · 7,5 MB | [statistika-nima-qorongi.mp4](media/statistika-nima-qorongi.mp4?raw=true) · 5:11 · 9,3 MB |
 
 ## Nimalar bor
 
